@@ -19,13 +19,13 @@ class RunSqlFile extends Command
     public function handle()
     {
         $folderPath = storage_path('app/backups');
-        $files = File::files($folderPath);
+        $files = File::latest($folderPath)->get();
 
         if (empty($files)) {
             $this->error("File not found");
             return false;
         } 
-        $file = $files[0];
+        $file = $files->first();
 
         if (!file_exists($file)) {
             $this->error("File not found: {$file}");

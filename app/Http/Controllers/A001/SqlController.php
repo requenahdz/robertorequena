@@ -12,11 +12,11 @@ class SqlController extends Controller
 {
     public function backup()
     {
-        Artisan::call('sql:backup');
+        return Artisan::call('sql:backup');
     }
 
     public function run()
     {
-        Artisan::call('sql:run');
+        return Artisan::call('sql:run');
     }
 }
