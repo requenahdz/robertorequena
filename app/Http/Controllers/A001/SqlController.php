@@ -10,12 +10,12 @@ use Illuminate\Support\Facades\Artisan;
 
 class SqlController extends Controller
 {
-    public function backup(Request $request)
+    public function backup()
     {
         Artisan::call('sql:backup');
     }
 
-    public function run($id)
+    public function run()
     {
         Artisan::call('sql:run');
     }
