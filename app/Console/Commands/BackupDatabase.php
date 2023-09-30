@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class BackupDatabase extends Command
 {
-    protected $signature = 'backup:database';
+    protected $signature = 'sql:backup';
     protected $description = 'Create a backup of the database';
 
     public function __construct()
