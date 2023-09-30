@@ -34,7 +34,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('A001/apps', A001AppsController::class);
 Route::resource('A001/sites', A001SitesController::class);
 Route::get('A001/sql/backup', [A001SqlController::class, 'backup']);
-Route::get('A001/sql}/run', [A001SqlController::class, 'run']);
+Route::get('A001/sql/run', [A001SqlController::class, 'run']);
 
 //A002
 Route::resource('A002/payments', A002PaymentsController::class);
