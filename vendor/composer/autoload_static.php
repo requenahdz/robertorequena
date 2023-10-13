@@ -354,8 +354,8 @@ class ComposerStaticInit1dd4a6537faeae78a40da022d03d8f0f
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -533,10 +533,13 @@ class ComposerStaticInit1dd4a6537faeae78a40da022d03d8f0f
     );
 
     public static $classMap = array (
+        'App\\Console\\Commands\\BackupDatabase' => __DIR__ . '/../..' . '/app/Console/Commands/BackupDatabase.php',
+        'App\\Console\\Commands\\RunSqlFile' => __DIR__ . '/../..' . '/app/Console/Commands/RunSqlFile.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\A001\\AppsController' => __DIR__ . '/../..' . '/app/Http/Controllers/A001/AppsController.php',
         'App\\Http\\Controllers\\A001\\SitesController' => __DIR__ . '/../..' . '/app/Http/Controllers/A001/SitesController.php',
+        'App\\Http\\Controllers\\A001\\SqlController' => __DIR__ . '/../..' . '/app/Http/Controllers/A001/SqlController.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
@@ -555,7 +558,10 @@ class ComposerStaticInit1dd4a6537faeae78a40da022d03d8f0f
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\ValidateSignature' => __DIR__ . '/../..' . '/app/Http/Middleware/ValidateSignature.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\A001\\App' => __DIR__ . '/../..' . '/app/Models/A001/App.php',
         'App\\Models\\A001\\Sitie' => __DIR__ . '/../..' . '/app/Models/A001/Sitie.php',
+        'App\\Models\\A002\\Loan' => __DIR__ . '/../..' . '/app/Models/A002/Loan.php',
+        'App\\Models\\A002\\Payment' => __DIR__ . '/../..' . '/app/Models/A002/Payment.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',

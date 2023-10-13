@@ -6,10 +6,13 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Console\\Commands\\BackupDatabase' => $baseDir . '/app/Console/Commands/BackupDatabase.php',
+    'App\\Console\\Commands\\RunSqlFile' => $baseDir . '/app/Console/Commands/RunSqlFile.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\A001\\AppsController' => $baseDir . '/app/Http/Controllers/A001/AppsController.php',
     'App\\Http\\Controllers\\A001\\SitesController' => $baseDir . '/app/Http/Controllers/A001/SitesController.php',
+    'App\\Http\\Controllers\\A001\\SqlController' => $baseDir . '/app/Http/Controllers/A001/SqlController.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
@@ -28,7 +31,10 @@ return array(
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\ValidateSignature' => $baseDir . '/app/Http/Middleware/ValidateSignature.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
+    'App\\Models\\A001\\App' => $baseDir . '/app/Models/A001/App.php',
     'App\\Models\\A001\\Sitie' => $baseDir . '/app/Models/A001/Sitie.php',
+    'App\\Models\\A002\\Loan' => $baseDir . '/app/Models/A002/Loan.php',
+    'App\\Models\\A002\\Payment' => $baseDir . '/app/Models/A002/Payment.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
