@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 
-class RunSqlFile extends Command
+class SqlRun extends Command
 {
     protected $signature = 'sql:run';
     protected $description = 'Run an SQL file';
@@ -34,9 +34,11 @@ class RunSqlFile extends Command
             $this->error("File not found: {$file}");
             return;
         }
+       
 
         try {
             DB::unprepared(file_get_contents($file));
+            echo $file;
             $this->info("SQL file executed successfully: {$file}");
         } catch (\Exception $e) {
             $this->error("Error executing SQL file: {$e->getMessage()}");

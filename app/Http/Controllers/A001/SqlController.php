@@ -13,12 +13,14 @@ class SqlController extends Controller
 {
     public function backup()
     {
-        return Artisan::call('sql:backup');
+        $response = Artisan::call('sql:backup');
+        return Response::json($response, 200);
     }
 
     public function run()
     {
-        return Artisan::call('sql:run');
+        $response  = Artisan::call('sql:run');
+        return Response::json($response, 200);
     }
 
     public function tabla($table = null)
