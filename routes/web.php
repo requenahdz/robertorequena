@@ -9,6 +9,9 @@ use App\Http\Controllers\A001\SqlController as A001SqlController;;
 use App\Http\Controllers\A002\PaymentsController as A002PaymentsController;
 use App\Http\Controllers\A002\LoansController as A002LoansController;
 
+use App\Http\Controllers\A003\TasksController as A003TasksController;
+
+
 
 
 
@@ -40,4 +43,6 @@ Route::get('A001/sql/run', [A001SqlController::class, 'run']);
 Route::resource('A002/payments', A002PaymentsController::class);
 Route::resource('A002/loans', A002LoansController::class);
 
+//A003
+Route::resource('A003/tasks', A003TasksController::class);
 
