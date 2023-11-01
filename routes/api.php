@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\A003\TasksController as A003TasksController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +24,6 @@ Route::middleware(['api'])->group(function() {
     Route::post('/login', [AuthController::class, 'login']);
     Route::post('/register', [AuthController::class, 'register']);
     Route::get('/getaccount', [AuthController::class, 'getaccount']);
+//A003
+Route::resource('A003/tasks', A003TasksController::class);
 });
