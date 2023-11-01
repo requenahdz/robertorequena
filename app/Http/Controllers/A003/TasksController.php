@@ -24,14 +24,14 @@ class TasksController extends Controller
     public function store(Request $request)
     {
         $entity = new Task();
-        $entity = $entity->create($request->all);
+        $entity = $entity->create($request->all());
         return Response::json($entity, 200);
     }
 
     public function update(Request $request, $id)
     {
         $entity = Task::find($id);
-        $entity = $entity->update($request->all);
+        $entity = $entity->update($request->all());
         return Response::json($entity, 200);
     }
 
