@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\A003;
+namespace App\Http\Controllers\A004;
 
 use Illuminate\Http\Request;
 use App\Models\A004\Debt;
