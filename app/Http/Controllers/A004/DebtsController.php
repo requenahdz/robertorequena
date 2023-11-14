@@ -7,7 +7,7 @@ use App\Models\A004\Debt;
 use Illuminate\Support\Facades\Response;
 use App\Http\Controllers\Controller;
 
-class TasksController extends Controller
+class DebtsController extends Controller
 {
     public function index(Request $request)
     {
