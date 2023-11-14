@@ -6,11 +6,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Task extends Model
 {
-    protected $table = 'a003_comments';
+    protected $table = 'a003_tasks';
 
     protected $fillable = [
-        'value',
-        'task_id'
+        'code',
+        'name',
+        'date_start',
+        'status',
+        'comments',
+        'priority',
+        'time',
+        'active'
     ];
 
     public function comments()
