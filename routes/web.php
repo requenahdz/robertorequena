@@ -49,4 +49,4 @@ Route::resource('A003/tasks', A003TasksController::class);
 Route::resource('A003/comments', A003CommentsController::class);
 
 //A004
-Route::resource('A004/comments', A004DebtsController::class);
+Route::resource('A004/debts', A004DebtsController::class);
