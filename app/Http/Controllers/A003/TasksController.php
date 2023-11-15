@@ -17,7 +17,7 @@ class TasksController extends Controller
 
     public function show($id)
     {
-        $entity = Task::with('comments')->find($id);
+        $entity = Task::with('comment')->find($id);
         return Response::json($entity, 200);
     }
 
