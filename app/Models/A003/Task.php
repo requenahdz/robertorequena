@@ -19,7 +19,7 @@ class Task extends Model
         'active'
     ];
 
-    public function comments()
+    public function comment()
     {
         return $this->hasMany(Comment::class);
     }
